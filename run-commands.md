@@ -1,3 +1,8 @@
+# Training
+## command
+1. Generate the training partitions for each submodule: ```python create_cluster_masks.py --config configs/mega-nerf/building.yaml --dataset_path dataset/building-pixsfm  --output mask-path --grid_dim 2 4```
+2. Train each submodule: ``````
+3. Merge the trained submodules into a unified Mega-NeRF model: ``````
 # Evaluation
 ## command
         python eval.py --config_file configs/mega-nerf/building.yaml  --exp_name logs/building-pixsfm-8 --dataset_path dataset/building-pixsfm --container_path pretrain/building-pixsfm-8.pt
